@@ -1,10 +1,35 @@
 /**
- * Lin Htet Paing - Modern Portfolio Interaction Script
- * Senior Full Stack Developer & Software Engineer (Laravel & Vue.js)
+ * Lin Htet Paing - Modern Portfolio Interaction & Animation Script
+ * Senior Frontend Craftsmanship: Scroll Progress, Reveal Animations, Count-Up, and Transitions
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Mobile Nav Toggle
+  // 1. Reading Scroll Progress Bar
+  const scrollProgress = document.getElementById('scrollProgress');
+  const siteHeader = document.getElementById('header');
+
+  const handleScrollEffects = () => {
+    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = totalHeight > 0 ? (window.pageYOffset / totalHeight) * 100 : 0;
+    
+    if (scrollProgress) {
+      scrollProgress.style.width = `${progress}%`;
+    }
+
+    // Dynamic Header Elevation
+    if (siteHeader) {
+      if (window.pageYOffset > 20) {
+        siteHeader.classList.add('scrolled');
+      } else {
+        siteHeader.classList.remove('scrolled');
+      }
+    }
+  };
+
+  window.addEventListener('scroll', handleScrollEffects, { passive: true });
+  handleScrollEffects();
+
+  // 2. Mobile Nav Toggle
   const mobileToggle = document.getElementById('mobileToggle');
   const navMenu = document.getElementById('navMenu');
 
@@ -31,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Scrollspy for active nav links
+  // 3. Scrollspy for active nav links
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-link');
 
@@ -53,10 +78,82 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
-  window.addEventListener('scroll', updateActiveNavLink);
+  window.addEventListener('scroll', updateActiveNavLink, { passive: true });
   updateActiveNavLink();
 
-  // Project Case Study Details Data (From Official Resume)
+  // 4. Scroll-Driven Reveal System (Intersection Observer)
+  const revealElements = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      root: null,
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+  } else {
+    // Fallback for older browsers
+    revealElements.forEach(el => el.classList.add('revealed'));
+  }
+
+  // 5. Senior Animated Metric Counters (Count-Up with Easing)
+  const countUpElements = document.querySelectorAll('.count-up');
+  let hasAnimatedCounters = false;
+
+  const animateCountUp = () => {
+    countUpElements.forEach(el => {
+      const target = parseFloat(el.getAttribute('data-target'));
+      const suffix = el.getAttribute('data-suffix') || '';
+      const decimals = parseInt(el.getAttribute('data-decimals') || '0', 10);
+      const duration = 1800; // ms
+      const startTime = performance.now();
+
+      const easeOutQuad = t => t * (2 - t);
+
+      const updateCounter = currentTime => {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const easedProgress = easeOutQuad(progress);
+        const currentValue = easedProgress * target;
+
+        el.textContent = `${currentValue.toFixed(decimals)}${suffix}`;
+
+        if (progress < 1) {
+          requestAnimationFrame(updateCounter);
+        } else {
+          el.textContent = `${target.toFixed(decimals)}${suffix}`;
+        }
+      };
+
+      requestAnimationFrame(updateCounter);
+    });
+  };
+
+  const metricsSection = document.querySelector('.metrics-grid');
+  if (metricsSection && 'IntersectionObserver' in window) {
+    const metricsObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !hasAnimatedCounters) {
+          hasAnimatedCounters = true;
+          animateCountUp();
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.25 });
+
+    metricsObserver.observe(metricsSection);
+  } else {
+    animateCountUp();
+  }
+
+  // 6. Project Case Study Details Data
   const projectData = {
     mobile_wallet: {
       client: "Onenex",
@@ -114,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  // Modal handlers
+  // 7. Modal Handlers with Smooth Transitions
   window.openProjectModal = function(key) {
     const data = projectData[key];
     if (!data) return;
@@ -189,7 +286,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Filter projects by category
+  // 8. Filter projects by category with smooth fade/scale
   window.filterProjects = function(category) {
     const cards = document.querySelectorAll('.project-card');
     const buttons = document.querySelectorAll('.filter-btn');
@@ -206,13 +303,14 @@ document.addEventListener('DOMContentLoaded', () => {
       const cardCategory = card.getAttribute('data-category');
       if (category === 'all' || cardCategory === category) {
         card.style.display = 'flex';
+        card.style.animation = 'fadeInCard 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards';
       } else {
         card.style.display = 'none';
       }
     });
   };
 
-  // Copy email to clipboard
+  // 9. Copy email to clipboard
   window.copyEmail = function() {
     const email = 'painglynn181@gmail.com';
     navigator.clipboard.writeText(email).then(() => {
@@ -227,7 +325,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
-  // Live Timezone Clock (Bangkok / Yangon UTC+7)
+  // 10. Live Timezone Clock (Bangkok / Yangon UTC+7)
   function updateTimezone() {
     const clockEl = document.getElementById('liveClock');
     if (!clockEl) return;
@@ -244,7 +342,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setInterval(updateTimezone, 1000);
   updateTimezone();
 
-  // Contact Form Feedback Simulator
+  // 11. Contact Form Feedback Simulator
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
@@ -261,3 +359,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// Card Fade-In Animation Keyframe
+const styleSheet = document.createElement('style');
+styleSheet.textContent = `
+  @keyframes fadeInCard {
+    from { opacity: 0; transform: scale(0.96) translateY(8px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+  }
+`;
+document.head.appendChild(styleSheet);
