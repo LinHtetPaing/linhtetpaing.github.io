@@ -325,7 +325,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
-  // 10. Live Timezone Clock (Bangkok / Yangon UTC+7)
+  // 10. Live Timezone Clock (Bangkok UTC+7)
   function updateTimezone() {
     const clockEl = document.getElementById('liveClock');
     if (!clockEl) return;
@@ -337,7 +337,7 @@ document.addEventListener('DOMContentLoaded', () => {
       second: '2-digit',
       hour12: true
     });
-    clockEl.textContent = `Bangkok / Yangon: ${timeString} (Active Working Hours)`;
+    clockEl.textContent = `Bangkok Time: ${timeString} (Active Working Hours)`;
   }
   setInterval(updateTimezone, 1000);
   updateTimezone();
