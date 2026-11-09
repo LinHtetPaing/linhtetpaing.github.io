@@ -1,6 +1,6 @@
 /**
  * Lin Htet Paing - Modern Portfolio Interaction Script
- * Senior Frontend Craftsmanship
+ * Senior Full Stack Developer & Software Engineer (Laravel & Vue.js)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -56,61 +56,61 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', updateActiveNavLink);
   updateActiveNavLink();
 
-  // Project Case Study Details Data
+  // Project Case Study Details Data (From Official Resume)
   const projectData = {
-    fintech: {
-      client: "Onenex Fintech Solutions",
-      role: "Lead Backend & Integration Engineer",
-      title: "2C2P Payment Gateway & Settlement Engine",
-      stack: ["Laravel", "2C2P REST API", "React", "MySQL", "Redis", "Docker"],
-      problem: "Enterprise merchant clients needed seamless card and local QR payment processing with sub-second response times, automated transaction ledgering, and PCI-compliant token handling.",
-      solution: "Engineered secure backend webhooks, transactional idempotency tokens, and real-time reconciliation dashboards using Laravel queues and Redis cache.",
-      outcomes: ["99.98% Transaction Uptime", "Zero-loss Settlement Ledger", "Under 600ms Checkout Latency"]
+    mobile_wallet: {
+      client: "Onenex",
+      role: "Software Engineer & Backend Lead",
+      title: "Mobile Wallet Payment & Microservices Platform",
+      stack: ["NestJS", "Strapi CMS", "PostgreSQL", "Microservices", "Docker", "REST APIs"],
+      problem: "Enterprise client required a regulated, high-throughput mobile wallet payment system with sub-second API latency and rock-solid ledger consistency.",
+      solution: "Engineered distributed microservices using NestJS and PostgreSQL, integrated Strapi CMS for flexible product administration, and built resilient payment gateways.",
+      outcomes: ["Sub-500ms Transaction Latency", "Regulated Payment Compliance", "Zero-Loss Transaction Ledger"]
     },
-    servd: {
+    ims_ai: {
+      client: "Enterprise Certification & AI Initiative",
+      role: "Full Stack Engineer & AI Pipeline Integrator",
+      title: "IMS – AI Face Recognition (InsightFace) & RAG System",
+      stack: ["FilamentPHP", "Laravel", "Python 3", "InsightFace", "RAG Pipeline", "MySQL"],
+      problem: "Enterprise project and product certification required automated identity verification and semantic search across technical documentation.",
+      solution: "Engineered an administrative certification portal in FilamentPHP, integrated Python 3 biometric verification (InsightFace), and built a Retrieval-Augmented Generation (RAG) assistant.",
+      outcomes: ["Automated Biometric Matching", "Sub-second Semantic RAG Queries", "Streamlined Certification Lifecycle"]
+    },
+    ocr_timesheet: {
+      client: "Enterprise Operations",
+      role: "Full Stack Developer",
+      title: "HR Timesheet & Automated Passport OCR System",
+      stack: ["FilamentPHP", "Laravel", "Python OCR", "MySQL", "Tailwind CSS"],
+      problem: "Manual transcription of passport credentials and time records caused data errors and onboarding delays.",
+      solution: "Integrated Optical Character Recognition (OCR) into FilamentPHP forms, enabling automatic parsing, validation, and auto-filling of structured passport data.",
+      outcomes: ["95%+ OCR Field Accuracy", "80% Reduction in Onboarding Time", "Real-Time Input Validation"]
+    },
+    servd_stripe: {
       client: "Alpha Sirius, Singapore",
-      role: "Senior Full-Stack Engineer",
-      title: "ServdOG & ServdMM Digital Commerce",
-      stack: ["React", "Redux", "PHP", "AWS EC2", "Git Workflow", "PostgreSQL"],
-      problem: "Scaling digital menu ordering and omni-channel customer accounts across multiple food and retail merchants in Singapore and Myanmar.",
-      solution: "Spearheaded front-to-back architecture, modular state management with Redux, dynamic restaurant catalog filters, and automated EC2 deployment workflows.",
-      outcomes: ["Scaled across 50+ merchants", "60% faster checkout funnel", "Multi-currency support"]
+      role: "Full Stack Developer",
+      title: "Servd & ServdOG Digital Commerce with Stripe",
+      stack: ["Laravel", "React", "Stripe", "FilamentPHP", "AWS EC2", "PostgreSQL"],
+      problem: "Multi-merchant digital food ordering platform required PCI-compliant credit card processing, split payouts, and multi-tenant administrative control.",
+      solution: "Integrated Stripe payment gateway with automated webhooks and built clean, maintainable administrative tooling using FilamentPHP following SOLID principles.",
+      outcomes: ["Scaled to 50+ Live Merchants", "PCI-Compliant Stripe Checkout", "Extensible Filament Admin"]
     },
-    pos: {
-      client: "Hospitality & Retail Clients",
-      role: "System Architect",
-      title: "Restaurant & Retail Multi-Tenant POS Platform",
-      stack: ["Laravel", "Vue.js", "WebSockets", "PostgreSQL", "IndexedDB"],
-      problem: "F&B environments require reliable table order routing, bill splitting, and offline resiliency during intermittent internet outages.",
-      solution: "Designed local browser storage synchronization with backend WebSocket event broadcasting, real-time kitchen display units, and inventory decrements.",
-      outcomes: ["Offline order queuing", "Sub-100ms kitchen routing", "Multi-tax & tip calculation"]
-    },
-    lms: {
-      client: "Onenex & International Enterprise Clients",
-      role: "Full-Stack Software Engineer",
-      title: "Enterprise LMS & Employee Recognition Platform",
-      stack: ["Next.js", "Laravel", "Zustand", "Docker", "Tailwind CSS"],
-      problem: "Companies required a unified platform for corporate compliance training, employee milestone tracking, and custom badge rewards.",
-      solution: "Built a reactive Next.js client with modular course progression trackers, automated certificate generators, and internal social badge awards.",
-      outcomes: ["1,000+ Active learners", "Gamified peer recognition", "Automated compliance audits"]
-    },
-    insurance: {
-      client: "Seattle Consulting / Japanese Enterprise",
+    insurance_migration: {
+      client: "Meta Team Myanmar / Japan Enterprise",
       role: "Senior Web Developer",
-      title: "Japan Enterprise Insurance & Microservices System",
-      stack: ["Java Spring Boot", "FuelPHP", "Laravel", "MySQL", "AWS"],
-      problem: "Legacy insurance policy processing system needed consolidation into high-security microservices complying with strict Japanese insurance regulations.",
-      solution: "Refactored legacy FuelPHP modules into structured Laravel and Spring services with automated validation rules and comprehensive unit testing.",
-      outcomes: ["Strict regulatory compliance", "40% reduction in policy processing errors", "Maintained across 3+ years"]
+      title: "7 Core Insurance Sub-systems Migration & SQL Optimization",
+      stack: ["Laravel", "FuelPHP", "MySQL Schema Optimization", "REST APIs"],
+      problem: "High-volume legacy insurance systems written in FuelPHP faced performance bottlenecks and high maintenance overhead.",
+      solution: "Led the end-to-end migration of 7 critical insurance sub-systems from FuelPHP to modern Laravel, refactoring schemas and indexing key queries for rapid retrieval.",
+      outcomes: ["7 Core Sub-Systems Migrated", "35% Faster SQL Query Response", "Maintained across 3+ Years in Production"]
     },
-    shipping: {
-      client: "Seattle Consulting / Maritime Logistics",
+    social_hrm_nx: {
+      client: "Onenex",
       role: "Software Engineer",
-      title: "Automated Shipping & Freight Logistics Platform",
-      stack: ["Java (Spring MVC, Struts2)", "Oracle / MySQL", "Jenkins"],
-      problem: "High-volume container shipment tracking required synchronized billing, port manifests, and scheduled customs notifications.",
-      solution: "Engineered core batch processing routines, EDI interface parsers, and transactional customs status pipelines.",
-      outcomes: ["Automated manifest generation", "Zero container data mismatch", "Production stability"]
+      title: "Enterprise HRM & Social Web Monorepo Migration",
+      stack: ["NestJS", "Nx Monorepo", "Vue.js", "Laravel", "Jest", "CI/CD"],
+      problem: "Growing corporate userbase created architectural friction between monolithic PHP/Vue modules.",
+      solution: "Spearheaded the architectural migration to a modern NestJS backend within an Nx monorepo, instituting strict Jest unit testing and automated CI/CD pipelines.",
+      outcomes: ["Decoupled Microservice Architecture", "High Test Coverage with Jest", "Frictionless Multi-team CI/CD"]
     }
   };
 
