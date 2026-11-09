@@ -5,856 +5,639 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Lin Htet Paing</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Lin Htet Paing (Lynn) | Senior Full-Stack Engineer &amp; System Architect</title>
+  <meta name="description" content="Senior Full-Stack Developer with 6+ years experience architecting fintech payment platforms, microservices, and reactive web applications across Singapore, US, and Southeast Asia.">
+  <meta name="keywords" content="Lin Htet Paing, Full-Stack Developer, Software Architect, Laravel, React, Next.js, Spring Boot, 2C2P Payment, Myanmar, Bangkok, Singapore">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.jpg" rel="icon" class="rounded-circle">
+  <link href="assets/img/favicon.jpg" rel="icon" type="image/jpeg">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icons -->
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+  <!-- Main Modern Craft CSS -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Personal
-  * Updated: Jun 18 2023 with Bootstrap v5.3.0
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="container">
+  <!-- ================= Site Header ================= -->
+  <header class="site-header" id="header">
+    <div class="container navbar">
+      <a href="#hero" class="brand-logo">
+        <span class="brand-icon">LP</span>
+        <div>linhtetpaing<span>.dev</span></div>
+      </a>
 
-      <h1><a href="index.html">Lin Htet Paing(Lynn)</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-      <h2>I'm a passionate <span>Web Developer | Full-Stack Developer</span> from Myanmar</h2>
+      <ul class="nav-menu" id="navMenu">
+        <li><a class="nav-link active" href="#hero">Overview</a></li>
+        <li><a class="nav-link" href="#about">Philosophy</a></li>
+        <li><a class="nav-link" href="#projects">Case Studies</a></li>
+        <li><a class="nav-link" href="#skills">Architecture</a></li>
+        <li><a class="nav-link" href="#experience">Experience</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link active" href="#header">Home</a></li>
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#resume">Resume</a></li>
-          <li><a class="nav-link" href="#services">Services</a></li>
-          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-      <div class="social-links">
-        <a href="https://twitter.com/LynnPaing16" class="twitter" target="_blank"><i class="bi bi-twitter"></i></a>
-        <a href="https://github.com/LinHtetPaing" class="github" target="_blank"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/lin-htet-paing-49199214b/" class="linkedin" target="_blank"><i
-            class="bi bi-linkedin"></i></a>
+      <div class="nav-actions">
+        <a href="https://drive.google.com/file/d/1As_khYweLtcsDKafZ0jGcYBH2nhqVVk6/view?usp=sharing" target="_blank" class="btn btn-secondary" style="padding: 0.45rem 0.9rem; font-size: 0.8rem;">
+          <i class="bi bi-file-earmark-pdf"></i>
+          <span>Resume</span>
+        </a>
+        <a href="#contact" class="btn btn-primary" style="padding: 0.45rem 1rem; font-size: 0.8rem;">
+          Let's Talk
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
       </div>
-
     </div>
-  </header><!-- End Header -->
+  </header>
 
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
-
-    <!-- ======= About Me ======= -->
-    <div class="about-me container">
-
-      <div class="section-title">
-        <h2>About</h2>
-        <p>Learn more about me</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/favicon.jpg" class="img-fluid" alt="">
+  <!-- ================= Hero Section ================= -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Hero Avatar -->
+        <div class="hero-avatar-wrap">
+          <img src="assets/img/favicon.jpg" alt="Lin Htet Paing" class="hero-avatar">
         </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>Web Developer &amp; Full-Stack Developer</h3>
-          <p class="fst-italic">
-            A developer who love coding, sports, meditation and reading.
+
+        <!-- Hero Content -->
+        <div>
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Available for Senior / Lead Roles &bull; Bangkok &bull; Yangon &bull; Remote Worldwide</span>
+          </div>
+
+          <h1 class="hero-title">
+            Architecting Resilient Web &amp; Fintech Systems
+          </h1>
+
+          <p class="hero-subtitle">
+            I'm <strong style="color: var(--text-primary);">Lin Htet Paing (Lynn)</strong>, a Senior Full-Stack Engineer and Software Craftsman with 6+ years shipping high-throughput enterprise platforms, 2C2P payment integrations, and modular microservices across US, Singapore, Japan, and Southeast Asia.
           </p>
-          <div class="row">
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>25</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+959455178566</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Yangon, Myanmar</span></li>
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bechalor</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>painglynn181@gmail.com</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-              </ul>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Case Studies</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+
+            <button onclick="copyEmail()" class="btn btn-secondary" id="copyEmailBtn">
+              <i class="bi bi-clipboard"></i>
+              <span>Copy Email</span>
+            </button>
+
+            <div class="social-strip">
+              <a href="https://github.com/LinHtetPaing" target="_blank" class="social-icon-btn" title="GitHub">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/lin-htet-paing-49199214b/" target="_blank" class="social-icon-btn" title="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://twitter.com/LynnPaing16" target="_blank" class="social-icon-btn" title="Twitter">
+                <i class="bi bi-twitter"></i>
+              </a>
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- Impact Metrics -->
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-num">6+</div>
+          <div class="metric-label">Years Production Craft</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-num">15+</div>
+          <div class="metric-label">Delivered Systems</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-num">4</div>
+          <div class="metric-label">Global Markets (US, SG, JP, MM)</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-num">99.9%</div>
+          <div class="metric-label">Uptime &amp; Reliability SLA</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= About Section ================= -->
+  <section class="section" id="about">
+    <div class="container">
+      <span class="section-tag">Engineering Craft</span>
+      <h2 class="section-title">Software as an Enduring Engineering Craft</h2>
+      <p class="section-desc">
+        A disciplined approach to system architecture grounded in clean code, domain-driven design, and resilient multi-currency workflows.
+      </p>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-card-num">01 / ARCHITECTURE</div>
+          <h3>Clean Code &amp; SOLID Principles</h3>
           <p>
-            I have over 5 year experience in web development using FuelPHP, Laravel, ReactJs, VueJs. I have also
-            experience in AWS EC2 and git workflow. I am passionate and highly motivated developer. I learned
-            programming paradigms like OO and functional programming. I can use SOLID principal, clean code principal
-            like DRY and OO Design patterns efficiently. I am a cheerful team member and actively participate in team
-            meetings. I am very good at interpersonal skill and communication skill. I also understand the software
-            architecture like MVC, Domain Driven Development(DDD) and Test Driven Development(TDD). I am also a fan of
-            Uncle Bob.
+            An advocate of Uncle Bob's craftsmanship. High cohesion, low coupling, decoupled business logic, and self-documenting code built for longevity and frictionless refactoring.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <div class="about-card-num">02 / DOMAIN MODELING</div>
+          <h3>Domain-Driven &amp; Test-Driven Design</h3>
+          <p>
+            Architecting complex business domains—including 2C2P payment tokenization, multi-branch POS inventory synchronization, and automated enterprise billing engines.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <div class="about-card-num">03 / COLLABORATION</div>
+          <h3>Global Remote &amp; Cross-Border Leadership</h3>
+          <p>
+            Track record collaborating with engineering teams in the USA, Singapore, and Japan with proactive async communication, structured code reviews, and mentorship.
           </p>
         </div>
       </div>
 
-    </div><!-- End About Me -->
-
-    <!-- ======= Counts ======= -->
-    <div class="counts container">
-
-      <div class="row">
-
-        <!-- <div class="col-lg-3 col-md-6">
-          <div class="count-box">
-            <i class="bi bi-emoji-smile"></i>
-            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
-              class="purecounter"></span>
-            <p>Happy Clients</p>
-          </div>
-        </div> -->
-
-        <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-          <div class="count-box">
-            <i class="bi bi-journal-richtext"></i>
-            <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1"
-              class="purecounter"></span>
-            <p>Projects</p>
-          </div>
+      <!-- Quick Facts Bar -->
+      <div class="quick-facts-bar">
+        <div class="fact-item">
+          <span class="label">Degree:</span>
+          <span class="value">Bachelor of Computer Science (UCSY)</span>
         </div>
-
-        <!-- <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-          <div class="count-box">
-            <i class="bi bi-headset"></i>
-            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
-              class="purecounter"></span>
-            <p>Hours Of Support</p>
-          </div>
-        </div> -->
-
-        <!-- <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-          <div class="count-box">
-            <i class="bi bi-award"></i>
-            <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1"
-              class="purecounter"></span>
-            <p>Awards</p>
-          </div>
-        </div> -->
-
-      </div>
-
-    </div><!-- End Counts -->
-
-    <!-- ======= Skills  ======= -->
-    <div class="skills container">
-
-      <div class="section-title">
-        <h2>Skills</h2>
-      </div>
-
-      <div class="row skills-content">
-
-        <div class="col-lg-4 text-center">
-          <h3>Programming Languages</h3>
-          <div class="progress">
-            <span class="skill">HTML 
-            <!-- <i class="val">100%</i> -->
-          </span>
-            <!-- <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div> -->
-          </div>
-
-          <div class="progress">
-            <span class="skill">CSS</span>
-            <!-- <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div> -->
-          </div>
-
-          <div class="progress">
-            <span class="skill">JavaScript</span>
-            <!-- <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div> -->
-          </div>
-
-          <div class="progress">
-            <span class="skill">PHP </span>
-            <!-- <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div> -->
-          </div>
-
-          <div class="progress">
-            <span class="skill">Java</span>
-            <!-- <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div> -->
-          </div>
-
-          <div class="progress">
-            <span class="skill">Python </span>
-            <!-- <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div> -->
-          </div>
-
+        <div class="fact-item">
+          <span class="label">Primary Stack:</span>
+          <span class="value" style="color: var(--accent-emerald);">Laravel &bull; React &bull; Next.js &bull; Java Spring &bull; AWS</span>
         </div>
-
-        <div class="col-lg-4 text-center">
-
-          <h3>Frameworks & Libraries</h3>
-
-          <div class="progress">
-            <span class="skill">Laravel</span>
-          </div>
-
-          <div class="progress">
-            <span class="skill">ReactJs</span>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Redux</span>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Jotai</span>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Zustand</span>
-          </div>
-
-          <div class="progress">
-            <span class="skill">NextJs</span>
-          </div>
-
-          <div class="progress">
-            <span class="skill">VueJs</span>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Spring Boot</span>
-          </div>
-
+        <div class="fact-item">
+          <span class="label">Location:</span>
+          <span class="value">Bangkok, Thailand &bull; Yangon, Myanmar</span>
         </div>
-
-        <div class="col-lg-4 text-center">
-
-          <h3>Database & Other Tools</h3>
-
-          <div class="progress">
-            <span class="skill">MySQL</span>
-          </div>
-
-          <div class="progress">
-            <span class="skill">PostgreSQL</span>
-          </div>
-
-          <div class="progress">
-            <span class="skill">MongoDB</span>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Amazon EC2</span>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Jenkin</span>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Git Workflow</span>
-          </div>
-
-        </div>
-
-
-      </div>
-
-    </div><!-- End Skills -->
-
-    <!-- ======= Interests ======= -->
-    <!-- <div class="interests container">
-
-      <div class="section-title">
-        <h2>Interests</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
-            <i class="ri-store-line" style="color: #ffbb2c;"></i>
-            <h3>Lorem Ipsum</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-            <h3>Dolor Sitema</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-            <h3>Sed perspiciatis</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-          <div class="icon-box">
-            <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-            <h3>Magni Dolores</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-database-2-line" style="color: #47aeff;"></i>
-            <h3>Nemo Enim</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-            <h3>Eiusmod Tempor</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-            <h3>Midela Teren</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-            <h3>Pira Neve</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-anchor-line" style="color: #b2904f;"></i>
-            <h3>Dirada Pack</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-disc-line" style="color: #b20969;"></i>
-            <h3>Moton Ideal</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-base-station-line" style="color: #ff5828;"></i>
-            <h3>Verdo Park</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
-            <h3>Flavor Nivelanda</h3>
-          </div>
+        <div class="fact-item">
+          <span class="label">Status:</span>
+          <span class="value" style="color: var(--accent-emerald);">Open for Senior Roles &amp; Contracts</span>
         </div>
       </div>
-
-    </div> -->
-    <!-- End Interests -->
-
-    <!-- ======= Testimonials ======= -->
-    <!-- <div class="testimonials container">
-
-      <div class="section-title">
-        <h2>Testimonials</h2>
-      </div>
-
-      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper-wrapper">
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
-                quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-              <h3>Saul Goodman</h3>
-              <h4>Ceo &amp; Founder</h4>
-            </div>
-          </div> -->
-          <!-- End testimonial item -->
-
-          <!-- <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-                quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-              <h3>Sara Wilsson</h3>
-              <h4>Designer</h4>
-            </div>
-          </div> -->
-          <!-- End testimonial item -->
-
-          <!-- <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor
-                labore quem eram duis noster aute amet eram fore quis sint minim.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-              <h3>Jena Karlis</h3>
-              <h4>Store Owner</h4>
-            </div>
-          </div> -->
-          <!-- End testimonial item -->
-
-          <!-- <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim
-                dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-              <h3>Matt Brandon</h3>
-              <h4>Freelancer</h4>
-            </div>
-          </div> -->
-          <!-- End testimonial item -->
-
-          <!-- <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa
-                labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-              <h3>John Larson</h3>
-              <h4>Entrepreneur</h4>
-            </div>
-          </div> -->
-          <!-- End testimonial item -->
-
-        <!-- </div> -->
-        <!-- <div class="swiper-pagination"></div> -->
-      <!-- </div> -->
-
-      <!-- <div class="owl-carousel testimonials-carousel">
-
-      </div>
-
-    </div> -->
-    <!-- End Testimonials  -->
-
-  </section><!-- End About Section -->
-
-  <!-- ======= Resume Section ======= -->
-  <section id="resume" class="resume">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Resume</h2>
-        <p>Check My Resume</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6">
-          <h3 class="resume-title">Sumary</h3>
-          <div class="resume-item pb-0">
-            <h4>Lin Htet Paing</h4>
-            <p><em>Innovative and highly skilled developer with 3+years of experience in web development fields. I always build websites and apps like a craft.</em>
-            </p>
-            <p>
-            <ul>
-              <li>Yangon, Myanmar</li>
-              <li>(+95) 9455178566</li>
-              <li>painglynn181@gmail.com</li>
-            </ul>
-            </p>
-          </div>
-
-          <h3 class="resume-title">Education</h3>
-          <div class="resume-item">
-            <h4>Bechalor Of Computer Science</h4>
-            <h5>2014 - 2019</h5>
-            <p><em>University of Computer Studies, Yangon</em></p>
-          </div>
-
-        </div>
-        <div class="col-lg-6">
-          <h3 class="resume-title">Professional Experience</h3>
-          <div class="resume-item">
-            <h4>Full-Stack Developer</h4>
-            <h5>May 2024 - present</h5>
-            <p><em>Prithibi Consulting and Development Services, USA</em></p>
-            <p><em>Remote</em></p>
-            <p>
-            <ul>
-              <li>Developed and maintained billing system and notification system for our client.
-                I am developing web agent using using Microsoft Power Platform.
-              </li>
-            </ul>
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>Software Engineer</h4>
-            <h5>Feb 2024 - present</h5>
-            <p><em>Onenex, Myanmar, Yangon</em></p>
-            <p><em>On-Site</em></p>
-            <p>
-            <ul>
-              <li>Develop a Content Management System (CMS) and Learning Management System (LMS) and the
-                Landing Page like static sites while guiding junior developers. I developed and maintained giving badge features in the
-                office’s internal social media web application recently. I am developing finance application using 2C2P Payment.
-                Collaborating with other developers and management team in the company.</li>
-            </ul>
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>Backend Developer</h4>
-            <h5>Nov 2023 - Jan 2024</h5>
-            <p><em>Quantech Myanmar, Yangon</em></p>
-            <p><em>On-Site</em></p>
-            <p>
-              <ul>
-                <li>I had developed admin dashboard that include finance transaction and other CRUD operations along with API integration and unit testing. </li>
-              </ul>
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>Full-Stack Developer</h4>
-            <h5>Dec 2022 - Oct 2023</h5>
-            <p><em>Alpha Sirius, Singapore</em></p>
-            <p><em>Remote</em></p>
-            <p>
-            <ul>
-              <li>I have to maintain existing project like Servd and develop new project
-                like servdOG and adding new features. I am responsible for both front-
-                end and back-end.</li>
-            </ul>
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>Senior Web Developer</h4>
-            <h5>May 2022 - Nov 2022</h5>
-            <p><em>Seattle Consulting Myanmar, Yangon</em></p>
-            <p><em>On-Site</em></p>
-            <p>
-            <ul>
-              <li>I have to maintain existing system and develop new project and help
-                and guide to junior developers.</li>
-            </ul>
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>Junior Web Developer</h4>
-            <h5>Oct 2018 - Apr 2022</h5>
-            <p><em>Seattle Consulting Myanmar, Yangon</em></p>
-            <p><em>On-Site</em></p>
-            <p>
-            <ul>
-              <li>I have to maintain existing system and develop new project.</li>
-            </ul>
-            </p>
-          </div>
-        </div>
-        <div class="text-center mt-5">
-          <p>Download my resume to know details about me</p>
-          <a href="https://drive.google.com/file/d/1As_khYweLtcsDKafZ0jGcYBH2nhqVVk6/view?usp=sharing">Download My Resume</button></a>
-        </div>
-      </div>
-
     </div>
-  </section><!-- End Resume Section -->
+  </section>
 
-  <!-- ======= Services Section ======= -->
-  <section id="services" class="services">
+  <!-- ================= Projects Section ================= -->
+  <section class="section" id="projects">
     <div class="container">
-
-      <div class="section-title">
-        <h2>Services</h2>
-        <p>My Services</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="icon-box w-100">
-            <div class="icon"><i class='bx bx-globe' ></i></div>
-            <h4>Website Development</h4>
-            <p>Landing page</p>
-          </div>
+      <div class="projects-header">
+        <div>
+          <span class="section-tag">Proven Production Systems</span>
+          <h2 class="section-title">Featured Production Case Studies</h2>
+          <p class="section-desc" style="margin-bottom: 0;">
+            Click on any case study card to inspect system architecture, problem statements, and verified production outcomes.
+          </p>
         </div>
 
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-          <div class="icon-box w-100">
-            <div class="icon"><i class='bx bx-window-alt'></i></div>
-            <h4>Web App Development</h4>
-            <p>Point of Sales(POS) System</p>
-            <p>Content Management System(CMS)</p>
-            <p>E-commerce System</p>
-            <p>...</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-          <div class="icon-box w-100">
-            <div class="icon"><i class='bx bxl-android' ></i></div>
-            <h4>Mobile App Development</h4>
-          </div>
+        <div class="filter-pills">
+          <button class="filter-btn active" data-filter="all" onclick="filterProjects('all')">All</button>
+          <button class="filter-btn" data-filter="fintech" onclick="filterProjects('fintech')">Fintech &amp; Payments</button>
+          <button class="filter-btn" data-filter="commerce" onclick="filterProjects('commerce')">Commerce &amp; POS</button>
+          <button class="filter-btn" data-filter="enterprise" onclick="filterProjects('enterprise')">Enterprise &amp; Cloud</button>
         </div>
       </div>
 
+      <div class="projects-grid">
+
+        <!-- Project 1: 2C2P Payment & Fintech Engine -->
+        <div class="project-card" data-category="fintech" onclick="openProjectModal('fintech')">
+          <div class="project-img-wrap">
+            <img src="assets/img/portfolio/portfolio-fintech.jpg" alt="2C2P Payment Platform" class="project-img">
+            <span class="project-badge">FINTECH / 2C2P GATEWAY</span>
+          </div>
+          <div class="project-body">
+            <div>
+              <div class="project-header">
+                <h3 class="project-title">2C2P Payment Gateway &amp; Settlement Engine</h3>
+                <span class="project-cta">Explore <i class="bi bi-arrow-up-right"></i></span>
+              </div>
+              <p class="project-desc">
+                High-security payment processing architecture handling tokenized credit cards, QR payments, and automated client settlement reconciliations.
+              </p>
+            </div>
+            <div class="project-tags">
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">2C2P API</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Redis</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: ServdOG & ServdMM -->
+        <div class="project-card" data-category="commerce" onclick="openProjectModal('servd')">
+          <div class="project-img-wrap">
+            <img src="assets/img/portfolio/portfolio-1.png" alt="ServdOG Digital Commerce" class="project-img">
+            <span class="project-badge">COMMERCE / SINGAPORE</span>
+          </div>
+          <div class="project-body">
+            <div>
+              <div class="project-header">
+                <h3 class="project-title">ServdOG &amp; ServdMM Digital Commerce</h3>
+                <span class="project-cta">Explore <i class="bi bi-arrow-up-right"></i></span>
+              </div>
+              <p class="project-desc">
+                Cross-border digital ordering and omni-channel e-commerce platform built for high concurrency and streamlined customer checkout across Southeast Asia.
+              </p>
+            </div>
+            <div class="project-tags">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Redux</span>
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">AWS EC2</span>
+              <span class="tech-tag">PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Retail POS Multi-tenant System -->
+        <div class="project-card" data-category="commerce" onclick="openProjectModal('pos')">
+          <div class="project-img-wrap">
+            <img src="assets/img/portfolio/portfolio-pos.jpg" alt="Restaurant POS System" class="project-img">
+            <span class="project-badge">SAAS / POINT OF SALE</span>
+          </div>
+          <div class="project-body">
+            <div>
+              <div class="project-header">
+                <h3 class="project-title">Restaurant &amp; Retail POS Multi-Tenant Platform</h3>
+                <span class="project-cta">Explore <i class="bi bi-arrow-up-right"></i></span>
+              </div>
+              <p class="project-desc">
+                Multi-branch point of sale system with split-billing, inventory tracking, kitchen display routing, and offline order persistence.
+              </p>
+            </div>
+            <div class="project-tags">
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">Vue.js</span>
+              <span class="tech-tag">WebSockets</span>
+              <span class="tech-tag">PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Enterprise LMS & Training Platform -->
+        <div class="project-card" data-category="enterprise" onclick="openProjectModal('lms')">
+          <div class="project-img-wrap">
+            <img src="assets/img/portfolio/portfolio-lms.jpg" alt="Enterprise LMS" class="project-img">
+            <span class="project-badge">ENTERPRISE CMS / LMS</span>
+          </div>
+          <div class="project-body">
+            <div>
+              <div class="project-header">
+                <h3 class="project-title">Enterprise Training &amp; Learning Management</h3>
+                <span class="project-cta">Explore <i class="bi bi-arrow-up-right"></i></span>
+              </div>
+              <p class="project-desc">
+                Role-based certification portal with gamified badge granting, progression metrics, and course authoring workflows for international corporate clients.
+              </p>
+            </div>
+            <div class="project-tags">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">Zustand</span>
+              <span class="tech-tag">Docker</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Japan Enterprise Insurance System -->
+        <div class="project-card" data-category="enterprise" onclick="openProjectModal('insurance')">
+          <div class="project-img-wrap">
+            <img src="assets/img/portfolio/portfolio-2.png" alt="Japan Insurance System" class="project-img">
+            <span class="project-badge">ENTERPRISE / JAPAN</span>
+          </div>
+          <div class="project-body">
+            <div>
+              <div class="project-header">
+                <h3 class="project-title">Japan Enterprise Insurance &amp; Microservices</h3>
+                <span class="project-cta">Explore <i class="bi bi-arrow-up-right"></i></span>
+              </div>
+              <p class="project-desc">
+                Mission-critical insurance policy processing and calculation system adhering to strict regulatory requirements and high calculation precision.
+              </p>
+            </div>
+            <div class="project-tags">
+              <span class="tech-tag">Java Spring Boot</span>
+              <span class="tech-tag">FuelPHP</span>
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Shipping Logistics Platform -->
+        <div class="project-card" data-category="enterprise" onclick="openProjectModal('shipping')">
+          <div class="project-img-wrap">
+            <img src="assets/img/portfolio/portfolio-details-1.jpg" alt="Shipping Logistics" class="project-img">
+            <span class="project-badge">LOGISTICS / JAVA</span>
+          </div>
+          <div class="project-body">
+            <div>
+              <div class="project-header">
+                <h3 class="project-title">Automated Shipping &amp; Freight Logistics Platform</h3>
+                <span class="project-cta">Explore <i class="bi bi-arrow-up-right"></i></span>
+              </div>
+              <p class="project-desc">
+                Enterprise cargo and maritime shipment management with automated manifest generation, EDI interfaces, and port schedule synchronization.
+              </p>
+            </div>
+            <div class="project-tags">
+              <span class="tech-tag">Java Spring MVC</span>
+              <span class="tech-tag">Struts2</span>
+              <span class="tech-tag">Enterprise DB</span>
+              <span class="tech-tag">Jenkins</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-  </section><!-- End Services Section -->
+  </section>
 
-  <!-- ======= Portfolio Section ======= -->
-  <section id="portfolio" class="portfolio">
+  <!-- ================= Architecture & Skills Section ================= -->
+  <section class="section" id="skills">
     <div class="container">
+      <span class="section-tag">Domain Clusters</span>
+      <h2 class="section-title">Technical Architecture &amp; Stack</h2>
+      <p class="section-desc">
+        Full-lifecycle engineering toolkit categorized by system layer and demonstrated production maturity.
+      </p>
 
-      <div class="section-title">
-        <h2>Portfolio</h2>
-        <p>My Works</p>
+      <div class="skills-grid">
+        <!-- Frontend Systems -->
+        <div class="skill-cluster">
+          <div class="cluster-title">
+            <span class="cluster-dot"></span>
+            <span>Frontend Systems</span>
+          </div>
+          <div class="skill-row"><span>React &amp; Next.js</span><span class="skill-level">Expert</span></div>
+          <div class="skill-row"><span>Redux &amp; Zustand</span><span class="skill-level">Expert</span></div>
+          <div class="skill-row"><span>Vue.js</span><span class="skill-level">Proficient</span></div>
+          <div class="skill-row"><span>TypeScript / JS</span><span class="skill-level">Core</span></div>
+          <div class="skill-row"><span>Tailwind CSS</span><span class="skill-level">Expert</span></div>
+        </div>
+
+        <!-- Backend & APIs -->
+        <div class="skill-cluster">
+          <div class="cluster-title">
+            <span class="cluster-dot" style="background-color: var(--accent-cyan);"></span>
+            <span>Backend &amp; APIs</span>
+          </div>
+          <div class="skill-row"><span>PHP (Laravel)</span><span class="skill-level" style="color: var(--accent-cyan);">Expert</span></div>
+          <div class="skill-row"><span>Java (Spring Boot)</span><span class="skill-level" style="color: var(--accent-cyan);">Proficient</span></div>
+          <div class="skill-row"><span>RESTful &amp; GraphQL</span><span class="skill-level" style="color: var(--accent-cyan);">Architect</span></div>
+          <div class="skill-row"><span>Clean Architecture</span><span class="skill-level" style="color: var(--accent-cyan);">Core</span></div>
+          <div class="skill-row"><span>Python</span><span class="skill-level" style="color: var(--accent-cyan);">Proficient</span></div>
+        </div>
+
+        <!-- Data & Payments -->
+        <div class="skill-cluster">
+          <div class="cluster-title">
+            <span class="cluster-dot"></span>
+            <span>Data &amp; Payments</span>
+          </div>
+          <div class="skill-row"><span>PostgreSQL / MySQL</span><span class="skill-level">Expert</span></div>
+          <div class="skill-row"><span>MongoDB</span><span class="skill-level">Proficient</span></div>
+          <div class="skill-row"><span>2C2P Payments</span><span class="skill-level">Specialist</span></div>
+          <div class="skill-row"><span>Redis Caching</span><span class="skill-level">Production</span></div>
+          <div class="skill-row"><span>Billing Engines</span><span class="skill-level">Verified</span></div>
+        </div>
+
+        <!-- DevOps & Cloud -->
+        <div class="skill-cluster">
+          <div class="cluster-title">
+            <span class="cluster-dot" style="background-color: var(--accent-cyan);"></span>
+            <span>Cloud &amp; DevOps</span>
+          </div>
+          <div class="skill-row"><span>AWS (EC2, S3)</span><span class="skill-level" style="color: var(--accent-cyan);">Proficient</span></div>
+          <div class="skill-row"><span>Docker</span><span class="skill-level" style="color: var(--accent-cyan);">Proficient</span></div>
+          <div class="skill-row"><span>Jenkins CI/CD</span><span class="skill-level" style="color: var(--accent-cyan);">Active</span></div>
+          <div class="skill-row"><span>Git Workflows</span><span class="skill-level" style="color: var(--accent-cyan);">Master</span></div>
+          <div class="skill-row"><span>Power Platform</span><span class="skill-level" style="color: var(--accent-cyan);">Agents</span></div>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <div class="row">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-card">Card</li>
-            <li data-filter=".filter-web">Web</li>
-          </ul>
+  <!-- ================= Experience Section ================= -->
+  <section class="section" id="experience">
+    <div class="container">
+      <span class="section-tag">Career Trajectory</span>
+      <h2 class="section-title">Professional Experience</h2>
+      <p class="section-desc">
+        A sustained progression of technical leadership, remote enterprise delivery, and architectural ownership.
+      </p>
+
+      <div class="experience-list">
+        <!-- Prithibi Consulting -->
+        <div class="experience-card">
+          <div class="exp-main">
+            <div class="exp-title-row">
+              <h3 class="exp-role">Full-Stack Developer &amp; Agent Architect</h3>
+              <span class="exp-badge">Remote &bull; USA</span>
+            </div>
+            <div class="exp-company">Prithibi Consulting and Development Services, USA</div>
+            <p class="exp-desc">
+              Architected and maintained client billing engines and automated event notification systems. Developed autonomous enterprise web agents leveraging Microsoft Power Platform.
+            </p>
+          </div>
+          <div class="exp-date">May 2024 &ndash; Present</div>
+        </div>
+
+        <!-- Onenex -->
+        <div class="experience-card">
+          <div class="exp-main">
+            <div class="exp-title-row">
+              <h3 class="exp-role">Software Engineer &amp; Tech Lead</h3>
+              <span class="exp-badge" style="color: var(--accent-cyan); border-color: rgba(6, 182, 212, 0.3);">Yangon &bull; On-Site</span>
+            </div>
+            <div class="exp-company">Onenex, Myanmar</div>
+            <p class="exp-desc">
+              Developed high-security fintech applications integrated with 2C2P payment gateway. Led CMS and LMS projects while mentoring junior developers. Engineered office internal social recognition microservices.
+            </p>
+          </div>
+          <div class="exp-date">Feb 2024 &ndash; Present</div>
+        </div>
+
+        <!-- Quantech Myanmar -->
+        <div class="experience-card">
+          <div class="exp-main">
+            <div class="exp-title-row">
+              <h3 class="exp-role">Backend Developer</h3>
+              <span class="exp-badge">Yangon &bull; On-Site</span>
+            </div>
+            <div class="exp-company">Quantech Myanmar</div>
+            <p class="exp-desc">
+              Built and maintained financial transaction admin dashboards, CRUD microservices, REST API integrations, and unit test suites.
+            </p>
+          </div>
+          <div class="exp-date">Nov 2023 &ndash; Jan 2024</div>
+        </div>
+
+        <!-- Alpha Sirius -->
+        <div class="experience-card">
+          <div class="exp-main">
+            <div class="exp-title-row">
+              <h3 class="exp-role">Full-Stack Developer</h3>
+              <span class="exp-badge">Singapore &bull; Remote</span>
+            </div>
+            <div class="exp-company">Alpha Sirius, Singapore</div>
+            <p class="exp-desc">
+              Maintained and scaled high-volume digital ordering platforms <code style="color: var(--accent-emerald);">Servd</code> and <code style="color: var(--accent-emerald);">ServdOG</code>, driving both React UI engineering and scalable backend business services.
+            </p>
+          </div>
+          <div class="exp-date">Dec 2022 &ndash; Oct 2023</div>
+        </div>
+
+        <!-- Seattle Consulting -->
+        <div class="experience-card">
+          <div class="exp-main">
+            <div class="exp-title-row">
+              <h3 class="exp-role">Senior Web Developer &rarr; Junior Web Developer</h3>
+              <span class="exp-badge">Japan Enterprise Projects</span>
+            </div>
+            <div class="exp-company">Seattle Consulting Myanmar</div>
+            <p class="exp-desc">
+              Promoted from Junior to Senior. Engineered large-scale enterprise insurance, shipping logistics, and training management platforms for Japanese clients using Java Spring and Laravel. Mentored new engineering cohorts.
+            </p>
+          </div>
+          <div class="exp-date">Oct 2018 &ndash; Nov 2022</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Contact Section ================= -->
+  <section class="section" id="contact" style="border-bottom: none;">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;">
+        <div>
+          <span class="section-tag">Direct Line</span>
+          <h2 class="section-title">Initiate Collaboration</h2>
+          <p class="section-desc" style="margin-bottom: 0;">
+            Looking for a Senior Full-Stack Engineer, Technical Lead, or System Consultant? Reach out directly.
+          </p>
+        </div>
+
+        <!-- Real-time Timezone Clock -->
+        <div class="timezone-pill">
+          <span class="status-dot"></span>
+          <span id="liveClock">Bangkok / Yangon: Active</span>
         </div>
       </div>
 
-      <div class="row portfolio-container">
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-1.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>ServdOG</h4>
-              <p>E-commerce platform</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.png" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="ServdOG"><i class="bx bx-plus"></i></a>
-                <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
-                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+      <div class="contact-grid">
+        <!-- Contact Information Cards -->
+        <div>
+          <div class="contact-card-item">
+            <div class="contact-card-left">
+              <div class="contact-icon"><i class="bi bi-envelope"></i></div>
+              <div class="contact-card-text">
+                <p>Direct Email</p>
+                <p>painglynn181@gmail.com</p>
               </div>
             </div>
+            <button onclick="copyEmail()" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">
+              Copy
+            </button>
           </div>
-        </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-2.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>ServdMM</h4>
-              <p>Digital Ordering Platform</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.png" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="ServdMM"><i class="bx bx-plus"></i></a>
-                <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
-                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+          <div class="contact-card-item">
+            <div class="contact-card-left">
+              <div class="contact-icon" style="color: var(--accent-cyan); background: var(--accent-cyan-glow);"><i class="bi bi-telephone"></i></div>
+              <div class="contact-card-text">
+                <p>Direct Phone / WhatsApp</p>
+                <p>+95 9455178566 &bull; 0652309750</p>
               </div>
             </div>
+            <a href="tel:+959455178566" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">
+              Call
+            </a>
           </div>
-        </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div>
-            <div class="card img-fluid text-center align-middle" style="height: 303px; padding-top: 122px">
-              <h4>Traning Management System</h4>
-              <p>PHP(Laravel) Project (Japan)</p>
+          <div class="contact-card-item">
+            <div class="contact-card-left">
+              <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
+              <div class="contact-card-text">
+                <p>Base of Operations</p>
+                <p>Bangkok, Thailand &amp; Yangon, Myanmar</p>
+              </div>
             </div>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-emerald);">Active</span>
+          </div>
+
+          <div style="margin-top: 1.5rem; padding: 1.25rem; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);">
+            <h4 style="font-size: 0.9rem; margin-bottom: 0.35rem; color: var(--text-primary);">Curriculum Vitae</h4>
+            <p style="font-size: 0.8rem; margin-bottom: 0.75rem;">Download the full verified resume with complete historical milestones and references.</p>
+            <a href="https://drive.google.com/file/d/1As_khYweLtcsDKafZ0jGcYBH2nhqVVk6/view?usp=sharing" target="_blank" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.45rem 1rem;">
+              <i class="bi bi-download"></i> Download Full Resume (PDF)
+            </a>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div>
-            <div class="card img-fluid text-center align-middle" style="height: 303px; padding-top: 122px">
-              <h4>Oxygen MA</h4>
-              <p>PHP(Laravel) Project (Japan)</p>
+        <!-- Fast Message Simulator Form -->
+        <div class="contact-form">
+          <h3 style="font-size: 1.05rem; margin-bottom: 0.25rem;">Quick Project Inquiry</h3>
+          <p style="font-size: 0.8rem; margin-bottom: 0.75rem;">Send a direct dispatch regarding team leadership, contract roles, or technical consulting.</p>
+
+          <form id="contactForm">
+            <div class="form-group">
+              <label class="form-label" for="senderName">Your Name &bull; Company</label>
+              <input type="text" id="senderName" required placeholder="e.g. Elena Rostova &bull; VP Engineering" class="form-input">
             </div>
-          </div>
-        </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div>
-            <div class="card img-fluid text-center align-middle" style="height: 303px; padding-top: 122px">
-              <h4>Point Of Sales system</h4>
-              <p>PHP(Laravel) Project</p>
-              <small>Shop and Restaurant</small>
+            <div class="form-group" style="margin-top: 0.75rem;">
+              <label class="form-label" for="senderEmail">Email Address</label>
+              <input type="email" id="senderEmail" required placeholder="elena@company.com" class="form-input">
             </div>
-          </div>
-        </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div>
-            <div class="card img-fluid text-center align-middle" style="height: 303px; padding-top: 122px">
-              <h4>Insurance System</h4>
-              <p>PHP(Laravel) Project (Japan)</p>
+            <div class="form-group" style="margin-top: 0.75rem;">
+              <label class="form-label" for="senderMsg">Project Scope / Technical Needs</label>
+              <textarea id="senderMsg" rows="3" required placeholder="Details regarding your architecture, timeline, or engineering goals..." class="form-textarea"></textarea>
             </div>
-          </div>
-        </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div>
-            <div class="card img-fluid text-center align-middle" style="height: 303px; padding-top: 122px">
-              <h4>Insurance System</h4>
-              <p>PHP(Laravel, FuelPHP) Project (Japan)</p>
-            </div>
-          </div>
-        </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+              <i class="bi bi-send"></i> Send Message Dispatch
+            </button>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div>
-            <div class="card img-fluid text-center align-middle" style="height: 303px; padding-top: 122px">
-              <h4>Employee Management System</h4>
-              <p>Java(Spring Boot) Project</p>
-            </div>
-          </div>
+            <div id="contactStatus" style="display: none; font-size: 0.8rem; color: var(--accent-emerald); text-align: center; margin-top: 0.5rem; font-weight: 600;"></div>
+          </form>
         </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div>
-            <div class="card img-fluid text-center align-middle" style="height: 303px; padding-top: 122px">
-              <h4>Shipping Management System</h4>
-              <p>Java(Spring MVC, Struts2) Project (Japan)</p>
-            </div>
-          </div>
-        </div>
-
       </div>
-
     </div>
-  </section><!-- End Portfolio Section -->
+  </section>
 
-  <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact">
+  <!-- ================= Footer ================= -->
+  <footer class="site-footer">
     <div class="container">
-
-      <div class="section-title">
-        <h2>Contact</h2>
-        <p>Contact Me</p>
-      </div>
-
-      <div class="row mt-2">
-
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-map"></i>
-            <h3>My Address</h3>
-            <a href="https://goo.gl/maps/zoLQnDjMcASGMXzg7" class="link-hover" target="_blank"><p class="mb-4">Bangkok, Thailand</p></a>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>Social Profiles</h3>
-            <div class="social-links">
-              <a href="https://twitter.com/LynnPaing16" class="twitter" target="_blank"><i class="bi bi-twitter"></i></a>
-              <a href="https://github.com/LinHtetPaing" class="github" target="_blank"><i class="bi bi-github"></i></a>
-              <a href="https://www.linkedin.com/in/lin-htet-paing-49199214b/" class="linkedin" target="_blank"><i
-                  class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3>Email Me</h3>
-            <a href="mailto:painglynn181@gmail.com" class="link-hover"><p>painglynn181@gmail.com</p></a>
-          </div>
-        </div>
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-phone-call"></i>
-            <h3>Call Me</h3>
-            <a href="tel:0652309750" class="link-hover"><p>0652309750</p></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
-        <div class="row">
-          <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-          </div>
-          <div class="col-md-6 form-group mt-3 mt-md-0">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-          </div>
-        </div>
-        <div class="form-group mt-3">
-          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-        </div>
-        <div class="form-group mt-3">
-          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-        </div>
-        <div class="my-3">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your message has been sent. Thank you!</div>
-        </div>
-        <div class="text-center"><button type="submit">Send Message</button></div>
-      </form> -->
-
+      <p>&copy; 2026 Lin Htet Paing. Built with Senior Engineering Craft &bull; Clean Architecture &bull; All Rights Reserved.</p>
     </div>
-  </section><!-- End Contact Section -->
+  </footer>
 
-  <div class="credits">
-    Copyright &copy; 2023 Lin Htet Paing
+  <!-- ================= Case Study Modal ================= -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeProjectModal()" aria-label="Close dialog">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      <div id="modalDetails"></div>
+    </div>
   </div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
+  <!-- JavaScript -->
   <script src="assets/js/main.js"></script>
 
 </body>
